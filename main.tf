@@ -7,6 +7,13 @@ terraform {
       version = ">= 2.0" # Optional but recommended in production
     }
   }
+
+  backend "azurerm" {
+    resource_group_name  = "myrg1"
+    storage_account_name = "mystorageaccount1myrg1"
+    container_name       = "mycontainer1"
+    key                  = "terraform.tfstate"
+  }
 }
 
 # Configure the Microsoft Azure Provider
