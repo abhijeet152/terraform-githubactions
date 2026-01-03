@@ -7,10 +7,13 @@ __pycache__/
 *.so
 
 
-# files
+# my files and folders to ignore.
 cred.txt
+.terraform.lock.hcl
+.terraform/
 
 # Distribution / packaging
+
 .Python
 build/
 develop-eggs/
