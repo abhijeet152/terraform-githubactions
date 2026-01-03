@@ -22,3 +22,4 @@ resource "azurerm_resource_group" "my_demo_rg1" {
 }
 
 # check status
+# updated app2 cred
