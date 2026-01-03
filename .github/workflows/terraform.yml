@@ -76,7 +76,16 @@ jobs:
     #     client-id: ${{ secrets.MYAPPREGISTRATION1 }}
     #     tenant-id: ${{ secrets.TENNANT_ID }}
     #     subscription-id: ${{ secrets.SUBSCRIPTION_ID }}
-
+    
+    - name: Azure Login
+      uses: Azure/login@v2.3.0
+      with:
+        # ClientId of the Azure Service principal created.
+        client-id: ${{ secrets.MYAPPREGISTRATION1 }}
+        # TenantId of the Azure Service principal created.
+        tenant-id: ${{ secrets.TENNANT_ID }}
+        # Azure subscriptionId
+        subscription-id: ${{ secrets.SUBSCRIPTION_ID }}
 
     # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
     - name: Setup Terraform
