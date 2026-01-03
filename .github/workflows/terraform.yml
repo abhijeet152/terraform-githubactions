@@ -73,9 +73,9 @@ jobs:
     - name: 'az cli login'
       uses: azure/login@v1
       with:
-        ARM_CLIENT_ID: ${{ secrets.MYAPPREGISTRATION1 }}
-        ARM_TENANT_ID: ${{ secrets.TENNANT_ID }}
-        ARM_SUBSCRIPTION_ID: ${{ secrets.SUBSCRIPTION_ID }}
+        client-id: ${{ secrets.MYAPPREGISTRATION1 }}
+        tenant-id: ${{ secrets.TENNANT_ID }}
+        subscription-id: ${{ secrets.SUBSCRIPTION_ID }}
 
 
     # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
