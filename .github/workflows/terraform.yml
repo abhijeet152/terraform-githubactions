@@ -81,6 +81,10 @@ jobs:
     # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
+      with:
+        client-id: ${{ secrets.MYAPPREGISTRATION1 }}
+        tenant-id: ${{ secrets.TENNANT_ID }}
+        subscription-id: ${{ secrets.SUBSCRIPTION_ID }}
       # with:
       #   cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }} # will be using azure cloud
 
