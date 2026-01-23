@@ -9,9 +9,9 @@ terraform {
   }
 
   backend "azurerm" {
-    resource_group_name  = "myrg1"
-    storage_account_name = "mystorageaccount1myrg1"
-    container_name       = "mycontainer1"
+    resource_group_name  = "MyResourceGroup"
+    storage_account_name = "mystorageaccount20260123"
+    container_name       = "mycontainer"
     key                  = "terraform.tfstate"
   }
 }
