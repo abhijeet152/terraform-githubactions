@@ -34,6 +34,10 @@ resource "azurerm_resource_group" "my_demo_rg2" {
   name     = "my-demo-rg2"
 }
 
+resource "azurerm_resource_group" "my_demo_rg4" {
+  location = "eastus"
+  name     = "my-demo-rg4"
+}
 
 # check status
 # updated app2 cred
